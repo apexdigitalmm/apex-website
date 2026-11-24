@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Digital MM — Digital Products</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Noto Sans Myanmar", "Myanmar Text", system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #0c0f13; color: #f2f4f7; line-height: 1.6;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 20px 16px 40px; }
+  header { text-align: center; padding: 18px 0 6px; }
+  header h1 { font-size: 30px; letter-spacing: 1px; }
+  header h1 span { color: #f5b301; }
+  header p { color: #9aa4b2; font-size: 14px; margin-top: 4px; }
+  .cta {
+    display: block; text-align: center; background: #229ed9; color: #fff;
+    text-decoration: none; font-size: 18px; font-weight: 700;
+    padding: 14px; border-radius: 12px; margin: 18px 0 22px;
+  }
+  .cta small { display: block; font-size: 13px; font-weight: 400; opacity: .9; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 18px; }
+  .tab {
+    flex: 1; text-align: center; padding: 11px 4px; border-radius: 10px;
+    background: #1a212b; color: #c6d0dc; border: 1px solid #2a3442;
+    font-size: 15px; font-weight: 700; cursor: pointer;
+  }
+  .tab.active { color: #fff; border-color: transparent; }
+  .tab[data-cat="gemini"].active { background: #4f46e5; }
+  .tab[data-cat="capcut"].active { background: #111; border-color: #555; }
+  .tab[data-cat="stars"].active { background: #b8860b; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .card {
+    background: #161d27; border: 1px solid #26303d; border-radius: 14px;
+    padding: 16px; margin-bottom: 14px;
+  }
+  .card h2 { font-size: 19px; }
+  .card .sub { color: #9aa4b2; font-size: 13.5px; margin: 2px 0 8px; }
+  .feat { font-size: 14px; color: #d5dce4; margin-bottom: 2px; }
+  .price { font-size: 24px; font-weight: 800; margin: 10px 0 4px; }
+  .price small { font-size: 14px; color: #9aa4b2; font-weight: 400; }
+  .promo { color: #f5b301; font-size: 14px; font-weight: 700; }
+  .order {
+    display: block; text-align: center; background: #22c55e; color: #fff;
+    text-decoration: none; font-weight: 700; padding: 11px; border-radius: 10px;
+    margin-top: 12px; font-size: 16px;
+  }
+  .tier {
+    display: flex; justify-content: space-between; align-items: center;
+    background: #161d27; border: 1px solid #26303d; border-radius: 12px;
+    padding: 12px 14px; margin-bottom: 10px;
+  }
+  .tier b { font-size: 17px; }
+  .tier span { color: #f5b301; font-weight: 800; font-size: 16px; }
+  .tier a {
+    background: #22c55e; color: #fff; text-decoration: none; font-weight: 700;
+    font-size: 14px; padding: 8px 14px; border-radius: 8px;
+  }
+  footer { text-align: center; color: #9aa4b2; font-size: 13.5px; margin-top: 26px; }
+  footer a { color: #229ed9; text-decoration: none; }
+  .note { text-align: center; color: #9aa4b2; font-size: 13px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>APEX <span>DIGITAL MM</span></h1>
+    <p>Digital Products — ယုံကြည်စိတ်ချစွာ မှာယူနိုင်ပါတယ်</p>
+  </header>
+
+  <a class="cta" href="https://t.me/Apexdigitalmm_bot">Telegram မှာ မှာယူမယ်
+    <small>@Apexdigitalmm_bot — Bot ကို နှိပ်ပြီး မှာယူပါ</small>
+  </a>
+
+  <div class="tabs">
+    <div class="tab active" data-cat="gemini" onclick="show('gemini')">Gemini</div>
+    <div class="tab" data-cat="capcut" onclick="show('capcut')">CapCut</div>
+    <div class="tab" data-cat="stars" onclick="show('stars')">Telegram Stars</div>
+  </div>
+
+  <!-- Gemini -->
+  <div class="panel active" id="panel-gemini">
+    <div class="card">
+      <h2>Google AI Pro — 6 Months</h2>
+      <div class="sub">Family Invitation — ကိုယ့် Gmail နဲ့ သုံးရတယ်</div>
+      <div class="feat">✓ Pro models အကုန်သုံးလို့ရတယ်</div>
+      <div class="feat">✓ 400GB Storage</div>
+      <div class="feat">✓ Gemini 4 Hydrogen</div>
+      <div class="price">60,000 <small>Ks</small></div>
+      <div class="promo">Limited promo: 50,000 Ks</div>
+      <a class="order" href="https://t.me/Apexdigitalmm_bot">မှာယူမယ်</a>
+    </div>
+    <div class="card">
+      <h2>Google AI Plus — 6 Months</h2>
+      <div class="sub">Link Activation — 12 နာရီအတွင်း activate လုပ်ပေးတယ်</div>
+      <div class="feat">✓ Gemini 4 Hydrogen</div>
+      <div class="feat">✓ 400GB Storage</div>
+      <div class="feat">✗ Pro models မပါဘူး</div>
+      <div class="price">20,000 <small>Ks</small></div>
+      <a class="order" href="https://t.me/Apexdigitalmm_bot">မှာယူမယ်</a>
+    </div>
+  </div>
+
+  <!-- CapCut -->
+  <div class="panel" id="panel-capcut">
+    <div class="card">
+      <h2>CapCut Pro — 1 Month</h2>
+      <div class="sub">Private Account</div>
+      <div class="feat">✓ Pro features အကုန်သုံးလို့ရတယ်</div>
+      <div class="feat">✓ Export watermark မပါဘူး</div>
+      <div class="price">18,500 <small>Ks</small></div>
+      <a class="order" href="https://t.me/Apexdigitalmm_bot">မှာယူမယ်</a>
+    </div>
+  </div>
+
+  <!-- Telegram Stars -->
+  <div class="panel" id="panel-stars">
+    <div class="tier"><b>⭐ 50 Stars</b><span>5,000 Ks</span><a href="https://t.me/Apexdigitalmm_bot">မှာယူမယ်</a></div>
+    <div class="tier"><b>⭐ 75 Stars</b><span>7,000 Ks</span><a href="https://t.me/Apexdigitalmm_bot">မှာယူမယ်</a></div>
+    <div class="tier"><b>⭐ 100 Stars</b><span>9,500 Ks</span><a href="https://t.me/Apexdigitalmm_bot">မှာယူမယ်</a></div>
+    <div class="tier"><b>⭐ 150 Stars</b><span>14,500 Ks</span><a href="https://t.me/Apexdigitalmm_bot">မှာယူမယ်</a></div>
+    <div class="tier"><b>⭐ 250 Stars</b><span>24,000 Ks</span><a href="https://t.me/Apexdigitalmm_bot">မှာယူမယ်</a></div>
+    <div class="tier"><b>⭐ 350 Stars</b><span>33,500 Ks</span><a href="https://t.me/Apexdigitalmm_bot">မှာယူမယ်</a></div>
+    <div class="tier"><b>⭐ 500 Stars</b><span>48,000 Ks</span><a href="https://t.me/Apexdigitalmm_bot">မှာယူမယ်</a></div>
+    <p class="note">Stars ကို ကိုယ့် username ကို တိုက်ရိုက်ပို့ပေးပါတယ်။</p>
+  </div>
+
+  <footer>
+    💳 ငွေပေးချေမှု: WavePay / KBZPay<br>
+    ⏱️ 12 နာရီအတွင်း ပို့ပေးပါတယ်<br>
+    Telegram: <a href="https://t.me/apexdigitalmm">@apexdigitalmm</a> &nbsp;|&nbsp; Viber: 09950452666
+  </footer>
+</div>
+<script>
+  function show(cat) {
+    document.querySelectorAll('.tab').forEach(function (el) {
+      el.classList.toggle('active', el.dataset.cat === cat);
+    });
+    document.querySelectorAll('.panel').forEach(function (el) {
+      el.classList.toggle('active', el.id === 'panel-' + cat);
+    });
+  }
+</script>
+</body>
+</html>
